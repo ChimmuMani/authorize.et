@@ -45,8 +45,8 @@
               </div>
           </form>
 
-          <form method="post"  id="processPaymentForm" name="processPaymentForm" action="https://test.authorize.net/payment/payment">
-      			<input type="hidden" name="token" id="token" />
+          <form method="post" action="https://test.authorize.net/payment/payment" id="formAuthorizeNetPopup" name="formAuthorizeNetPopup" target="iframeAuthorizeNet" style="display:none;">
+	<input type="hidden" id="popupToken" name="token" value="Replace with form token from getHostedPaymentPageResponse" />
         		<button id="btnContinuePayment" onclick=""  class="d-none btn btn-success btn-md btn-block">Proceed Payment</button>
         	</form>
       </div>
